@@ -1,15 +1,15 @@
 import { createResourceController, Conn, resource } from "../../core";
 
 const list = (conn: Conn) => {
-  conn.res.render('../app/views/user');
+  conn.res.render('user');
 };
 
 const create = (conn: Conn) => {
-  conn.res.render('../app/views/user/create');
+  conn.res.render('user/create');
 };
 
 const edit = (conn: Conn) => {
-
+  
 };
 
 const show = (conn: Conn) => {
