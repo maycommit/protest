@@ -1,20 +1,22 @@
-const list = () => {
+import { createResourceController, Conn, resource } from "../../core";
+
+const list = (conn: Conn) => {
+  conn.res.render('../app/views/user');
+};
+
+const create = (conn: Conn) => {
+  conn.res.render('../app/views/user/create');
+};
+
+const edit = (conn: Conn) => {
 
 };
 
-const create = () => {
-  
-};
-
-const edit = () => {
+const show = (conn: Conn) => {
 
 };
 
-const show = () => {
-
-};
-
-const remove = () => {
+const remove = (conn: Conn) => {
 
 };
 
