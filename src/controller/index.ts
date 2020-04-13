@@ -1,4 +1,4 @@
-import { Conn } from "./router";
+import { Conn } from 'router';
 
 export interface ResourceController {
   list: (conn: Conn) => void;

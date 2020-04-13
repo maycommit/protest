@@ -1,5 +1,5 @@
 import express from 'express';
-import { ResourceController } from "./controller";
+import { ResourceController } from 'controller';
 
 export interface Conn {
   req: express.Request;

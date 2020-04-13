@@ -9,11 +9,10 @@ const create = (conn: Conn) => {
 };
 
 const edit = (conn: Conn) => {
-  
+  conn.res.render('user/edit');
 };
 
 const show = (conn: Conn) => {
-
 };
 
 const remove = (conn: Conn) => {
