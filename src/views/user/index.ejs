@@ -1,0 +1,26 @@
+<h1>Listing Users</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<% for (user of users) { %>
+    <tr>
+      <td><%= user.name %></td>
+
+      <td>
+        <span><a href=<%= "/users/show/" + user.id %>>Show</a></span>
+        <span><a href=<%= "/users/edit/" + user.id %>>Edit</a></span>
+        <span><a href=<%= "/users/remove/" + user.id %> onclick = "if (! confirm('Continue?')) { return false; }">Delete</a></span>
+      </td>
+    </tr>
+<% } %>
+  </tbody>
+</table>
+
+<span><a href="/users/new" class="btn btn-primary">New User</a></span>
