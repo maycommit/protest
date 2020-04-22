@@ -6,7 +6,7 @@ services:
     ports:
     - 5432:5432
     environment:
-    - POSTGRES_DB=todospelasaude
-    - POSTGRES_USER=todospelasaude
-    - POSTGRES_PASSWORD=todospelasaude
+    - POSTGRES_DB=exampledev
+    - POSTGRES_USER=exampledev
+    - POSTGRES_PASSWORD=exampledev
     - MAX_CONNECTIONS=300

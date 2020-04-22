@@ -1,16 +1,16 @@
 {
   "development": {
-    "username": "todospelasaude",
-    "password": "todospelasaude",
-    "database": "todospelasaude",
+    "username": "exampledev",
+    "password": "exampledev",
+    "database": "exampledev",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "operatorsAliases": false
   },
   "test": {
-    "username": "todospelasaude",
-    "password": "todospelasaude",
-    "database": "todospelasaude",
+    "username": "exampledev",
+    "password": "exampledev",
+    "database": "exampledev",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "operatorsAliases": false
