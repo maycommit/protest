@@ -1,0 +1,16 @@
+<h1>Show Product</h1>
+<ul class="list-group">
+  
+    <li class="list-group-item">
+      <strong>name</strong>
+      <%= product.name %>
+    </li>
+  
+    <li class="list-group-item">
+      <strong>price</strong>
+      <%= product.price %>
+    </li>
+  
+</ul>
+<span><a href=<%= "/products/edit/" + product.id %>>Edit</a></span>
+<span><a href="/products">Back</a></span>

@@ -1,0 +1,30 @@
+<h1>Listing Products</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<% for (product of products) { %>
+    <tr>
+      
+    <td><%= product.name %></td>
+  
+    <td><%= product.price %></td>
+  
+
+      <td>
+        <span><a href=<%= "/products/show/" + product.id %>>Show</a></span>
+        <span><a href=<%= "/products/edit/" + product.id %>>Edit</a></span>
+        <span><a href=<%= "/products/remove/" + product.id %> onclick = "if (! confirm('Continue?')) { return false; }">Delete</a></span>
+      </td>
+    </tr>
+<% } %>
+  </tbody>
+</table>
+
+<span><a href="/products/new" class="btn btn-primary">New product</a></span>

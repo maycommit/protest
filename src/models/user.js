@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 const { DataTypes } = require('sequelize');
 
 export default (sequelize) => {
