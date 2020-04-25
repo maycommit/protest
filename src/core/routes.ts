@@ -1,11 +1,11 @@
 import express from 'express';
 import { ControllerInput, Resource, ModelRegistry } from './controller';
-import { Model, Sequelize } from 'sequelize/types';
+import { Model, Sequelize, DataTypes } from 'sequelize';
 
 export interface Route {
   url: string;
   controller: (input: ControllerInput) => void;
-  model: (sequelize: Sequelize) => ModelRegistry;
+  model: (sequelize: Sequelize, dataTypes: typeof DataTypes) => ModelRegistry;
   method: string;
 }
 
@@ -61,14 +61,14 @@ export const createRoutes = (routes: Route[]) => (app: express.Express, sequeliz
     switch(method) {
       case 'get': {
         return app.get(url, (request, response) => {
-          const modelRegistry = model(sequelize);
+          const modelRegistry = model(sequelize, DataTypes);
       
           controller({ request, response, model: modelRegistry });
         });
       }
       case 'post': {
         return app.post(url, (request, response) => {
-          const modelRegistry = model(sequelize);
+          const modelRegistry = model(sequelize, DataTypes);
     
           controller({ request, response, model: modelRegistry });
         });

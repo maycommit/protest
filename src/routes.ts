@@ -1,9 +1,9 @@
 import { createRoutes, resource } from './core';
-import userController from './controllers/user-controller';
-import userModel from './models/user';
+import productController from './controllers/product-controller';
+import productModel from './models/product';
 
 const routes = [
-  ...resource('/users', userController, userModel)
+  ...resource('/products', productController, productModel)
 ]; 
 
 export default createRoutes(routes);

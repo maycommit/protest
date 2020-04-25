@@ -15,7 +15,7 @@ generator.runActions({ name, attributes: attributes.join(' ') })
   .then(() => console.log('Plop generate files'))
   .catch(err => console.error(err))
 
-exec(`cd src && ${basename}/node_modules/.bin/sequelize-cli model:generate --name ${name} --attributes ${attributes.join(' ')}`, (error, stdout, stderr) => {
+exec(`cd src && ${basename}/node_modules/.bin/sequelize-cli model:generate --name ${name} --attributes ${attributes.join(',')} --force`, (error, stdout, stderr) => {
   if (error) {
       console.log(`error: ${error.message}`);
       return;

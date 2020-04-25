@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint --fix . --ext .ts ",
     "start": "ts-node src/main.ts",
-    "gen:html": "node ./cli/index.js"
+    "gen:html": "node ./cli/gen-html.js",
+    "sequelize": "node ./cli/sequelize.js"
   },
   "devDependencies": {
     "@types/express-ejs-layouts": "^2.3.2",
