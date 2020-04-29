@@ -12,4 +12,5 @@ Generate your MVC CRUD
 ```
 # example
 yarn gen:html Product name:string price:float
+yarn sequelize db:migrate
 ```
